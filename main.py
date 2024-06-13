@@ -21,7 +21,8 @@ from PIL import Image
 
 lhassa = 'https://www.photos-animaux.com/data/photos/518/5178/517790.jpg'
 bobby = "https://raw.githubusercontent.com/deep-learning-with-pytorch/dlwpt-code/master/data/p1ch2/bobby.jpg"
-urllib.request.urlretrieve(lhassa, "chien.jpg")
+monimage = lhassa
+urllib.request.urlretrieve(monimage, "chien.jpg")
 img = Image.open("chien.jpg")
 img.show()
 img_t = preprocess(img)
